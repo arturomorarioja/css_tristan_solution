@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+:root {
+    --colorMain: #0b0d0a;
+    --colorSecondary: #d6c37f;
+    --colorLink: floralwhite;
+    --colorBgMain: #262858;
+    --colorBgSecondary: #506283;
+    --colorCTA: #582627;
+
+    --fontHeader: 'Martian Mono', 'Courier New', monospace;
+    --fontMain: Cantarell, Arial, sans-serif;
+}
