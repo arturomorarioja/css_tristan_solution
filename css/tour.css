@@ -16,6 +16,9 @@
 #conferences > article > p {
     margin: 0;
 }
+.date:before {
+    content: url(../img/microphone.png) " ";
+}
 .event {
     font-weight: bold;
     color: var(--colorBgMain);
