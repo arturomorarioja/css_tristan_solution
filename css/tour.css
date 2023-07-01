@@ -1,0 +1,50 @@
+/*
+    On tour page
+*/
+
+/* Conference cards */
+
+#conferences > article {
+    border-bottom: solid thin var(--colorSecondary);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+#conferences > article:last-of-type {
+    border: none;
+    padding-bottom: 0;
+}
+#conferences > article > p {
+    margin: 0;
+}
+.event {
+    font-weight: bold;
+    color: var(--colorBgMain);
+}
+.capacity {
+    font-weight: bold;
+    color: var(--colorCTA);
+}
+.location, .venue {
+    display: inline-block;
+}
+.venue:before {
+    content: '(';
+}
+.venue:after {
+    content: ')';
+}
+
+@media (min-width: 1024px) {
+    #conferences {
+        display: flex;
+        flex-flow: row wrap;        
+        justify-content: space-between;
+        column-gap: 0.5rem;
+    }
+    #conferences > article, #conferences > article:last-of-type {
+        flex: 0 0 calc(50% - 0.5rem);
+        border: solid thin var(--colorSecondary);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+}
