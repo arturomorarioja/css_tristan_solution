@@ -208,3 +208,29 @@ footer > * {
     font-family: var(--fontHeader);
 
 }
+
+/* Cards */
+.card-container > article {
+    border-bottom: solid thin var(--colorSecondary);
+    margin-bottom: 1rem;
+}
+.card-container > article:last-of-type {
+    border: none;
+}
+.card {
+
+}
+
+@media (min-width: 1024px) {
+    .card-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        column-gap: 0.5rem;
+    }
+    .card, .card-container > article:last-of-type {
+        flex: 0 0 calc(50% - 0.5rem);
+        border: solid thin var(--colorSecondary);
+        border-radius: 0.5rem;
+    }
+}

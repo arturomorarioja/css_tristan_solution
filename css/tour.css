@@ -2,15 +2,33 @@
     On tour page
 */
 
+/* Image */
+
+#conferences img {
+    display: block;
+    width: 100%;   
+    margin-bottom: 1rem; 
+}
+@media (min-width: 640px) {
+    #conferences img {
+        max-height: 360px;
+        object-fit: cover;
+    }
+}
+@media (min-width: 800px) {
+    #conferences img {
+        content: url(../img/tristan_1280.jpg);
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
 /* Conference cards */
 
 #conferences > article {
-    border-bottom: solid thin var(--colorSecondary);
-    margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
 #conferences > article:last-of-type {
-    border: none;
     padding-bottom: 0;
 }
 #conferences > article > p {
@@ -38,16 +56,7 @@
 }
 
 @media (min-width: 1024px) {
-    #conferences {
-        display: flex;
-        flex-flow: row wrap;        
-        justify-content: space-between;
-        column-gap: 0.5rem;
-    }
     #conferences > article, #conferences > article:last-of-type {
-        flex: 0 0 calc(50% - 0.5rem);
-        border: solid thin var(--colorSecondary);
-        border-radius: 0.5rem;
         padding: 0.5rem;
     }
 }
