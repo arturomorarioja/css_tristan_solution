@@ -4,19 +4,19 @@
 
 /* Image */
 
-#conferences img {
+#conferences > img {
     display: block;
     width: 100%;   
     margin-bottom: 1rem; 
 }
 @media (min-width: 640px) {
-    #conferences img {
+    #conferences > img {
         max-height: 360px;
         object-fit: cover;
     }
 }
 @media (min-width: 800px) {
-    #conferences img {
+    #conferences > img {
         content: url(../img/tristan_1280.jpg);
         max-height: 400px;
         object-fit: cover;

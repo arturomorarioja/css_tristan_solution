@@ -217,20 +217,25 @@ footer > * {
 .card-container > article:last-of-type {
     border: none;
 }
-.card {
-
-}
-
 @media (min-width: 1024px) {
     .card-container {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        align-items: stretch;
         column-gap: 0.5rem;
     }
-    .card, .card-container > article:last-of-type {
+    .card-container > article, .card-container > article:last-of-type {
         flex: 0 0 calc(50% - 0.5rem);
         border: solid thin var(--colorSecondary);
         border-radius: 0.5rem;
     }
+}
+
+/* Go to top icons */
+.top {
+    width: 100%;
+    text-align: right;
+    padding-right: 2rem;
+    margin-top: -0.5rem;
 }
