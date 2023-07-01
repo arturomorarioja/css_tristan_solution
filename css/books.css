@@ -41,4 +41,22 @@
         clear: both;
         overflow: auto;
     }
+    #publications > article:last-of-type {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1024px) {
+    #publications {
+        display: flex;
+        flex-flow: row wrap;        
+        justify-content: space-between;
+        column-gap: 0.5rem;
+    }
+    #publications > article, #publications > article:last-of-type {
+        flex: 0 0 calc(50% - 0.5rem);
+        border: solid thin var(--colorSecondary);
+        border-radius: 0.5rem;
+        padding: 1rem 1rem 0 1rem;
+        margin-bottom: 1rem;
+    }
 }
