@@ -9,7 +9,7 @@
 <body>
     <header>
         <div id="avatar">
-            <a href="#home"><img src="img/lind.png" alt="Tristan Wede Lind"></a>
+            <a href="#home"><img class="avatar" src="img/lind.png" alt="Tristan Wede Lind"></a>
         </div>
         <div>
             <h1>Tristan Wede Lind</h1>
@@ -246,8 +246,48 @@
             <section class="article-header">
                 <h2>Contact</h2>
             </section>
-            <section id="contact-info">
-
+            <section id="contact-info" class="card-container">
+                <article>                    
+                    <div>
+                        <img class="avatar" src="img/victoria.png" alt="Victoria Marsh">
+                        <h3>Publishing</h3>
+                        <p class="name">Victoria Marsh</p>
+                        <p class="job">Editor</p>
+                        <p class="email"><a href="mailto:victoriamarsh@keapublishing.com" title="Email Victoria Marsh">victoriamarsh@keapublishing.com</a></p>
+                        <p class="phone"><a href="tel:004407975020028" title="Phone Victoria Marsh">(+44) 079 7502 0028</a></p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="avatar" src="img/elly.png" alt="Elly Houthuijzen">
+                        <h3>Booking</h3>
+                        <p class="name">Elly Houthuijzen</p>
+                        <p class="job">Agent</p>
+                        <p class="email"><a href="mailto:elly@houthuijzen.com" title="Email Elly Houthuijzen">elly@houthuijzen.com</a></p>
+                        <p class="phone"><a href="tel:00310642821232" title="Phone Elly Houthuijzen">(+31) 06-42821232</a></p>
+                    </div>
+                    <form action="mailto:elly@houthuijzen.com" method="POST">
+                        <fieldset>
+                            <legend>Request booking</legend>
+                            <div>
+                                <label for="txtName">Name</label>
+                                <input type="text" id="txtName" name="name">
+                            </div>
+                            <div>
+                                <label for="txtEmail">E-mail address</label>
+                                <input type="email" id="txtEmail" name="email">
+                            </div>
+                            <div>
+                                <label for="txtEnquiry">Enquiry</label>
+                                <textarea name="enquiry" id="txtEnquiry"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit">
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+                <img src="img/conference.jpg" alt="Tristan Wede Lind delivers a talk">
             </section>
             <section class="top">
                 <a href="#" target="_self" title="Go to top"><img src="img/up-arrow.png" alt="Go to top"></a>
@@ -272,7 +312,7 @@
             <a href="#">Cookie Policy</a>
         </div>
         <div id="credits">
-            <p>Pictures of Tristan by <a href="https://www.pexels.com/@bertellifotografia/" target="_blank" title="Matheus Bertelli">Matheus Bertelli</a></p>
+            <p>Person pictures by <a href="https://www.pexels.com/@bertellifotografia/" target="_blank" title="Matheus Bertelli">Matheus Bertelli</a></p>
             <p>Book cover pictures by <a href="https://www.123rf.com/" target="_blank" title="123RF">123RF</a></p>
             <p>SoMe icons generated with <a href="https://www.powr.io/plugins/social-media-icons/standalone" target="_blank" title="Pwer.io">Powr.io</a></p>
             <p>Microphone icon by <a href="https://www.freepik.com/" target="_blank" title="Freepik">Freepik</a></p>

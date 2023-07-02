@@ -2,6 +2,7 @@
 @import 'home.css';
 @import 'tour.css';
 @import 'books.css';
+@import 'contact.css';
 
 * {
     margin: 0;
@@ -42,6 +43,9 @@ nav {
 nav a:hover, footer a:hover {
     color: var(--colorSecondary);
 }
+nav a:hover::after, footer a:hover::after {
+    color: var(--colorLink);
+}
 
 main {
     padding: 1rem;
@@ -53,6 +57,10 @@ main > article:target {
 
 main > article p {
     margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .some {
@@ -78,7 +86,7 @@ header > * {
 #avatar {
     display: none;
 }
-header img {
+.avatar {
     border-radius: 50%;
 }
 header h2 {
