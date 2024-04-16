@@ -156,17 +156,11 @@ footer > * {
 @media (min-width: 600px) {
     footer {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-areas: 
-            "pub pub pub legal legal credits credits credits"
-            "some some some legal legal credits credits credits"
-            "copyright copyright copyright copyright copyright copyright copyright copyright";
-        /* The original approach below caused too much wrapping in the credits div */
-        /* grid-template-columns: repeat(3, 1fr);
-           grid-template-areas: 
+        grid-template-columns: 3fr 2fr 3fr;
+        grid-template-areas:
             "pub legal credits"
             "some legal credits"
-            "copyright copyright copyright"; */
+            "copyright copyright copyright";
         column-gap: 0;
     }
     footer > * {
