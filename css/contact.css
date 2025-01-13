@@ -78,7 +78,7 @@
     height: 6rem;
     margin-bottom: 1rem;
 }
-#contact-info input[type=submit] {
+#contact-info button[type=submit] {
     position: relative;
     left: 2rem;
     width: auto;

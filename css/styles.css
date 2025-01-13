@@ -51,11 +51,11 @@ main {
     padding: 1rem;
     background-color: var(--colorLink);
 }
-main > article:target {
+main > section:target {
     display: block;
 }
 
-main > article p {
+main > section p {
     margin-bottom: 1rem;
 }
 

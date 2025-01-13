@@ -9,7 +9,9 @@
 <body>
     <header>
         <section id="avatar">
-            <a href="#home"><img class="avatar" src="img/lind.png" alt="Tristan Wede Lind"></a>
+            <a href="#home" title="Home page">
+                <img class="avatar" src="img/lind.png" alt="Tristan Wede Lind">
+            </a>
         </section>
         <div>
             <h1>Tristan Wede Lind</h1>
@@ -31,15 +33,15 @@
         </ul>
     </nav>
     <main>
-        <article id="home">
+        <section id="home">
             <section id="new-release">
                 <div id="new-pill">
                     New release
                 </div>
-                <div id="new-book">
+                <section id="new-book">
                     <h3><em>Advanced PHP: From Zero to Hero</em></h3>
-                    <div>&copy; 2023 KEA Publishing</div>
-                </div>
+                    <p>&copy; 2023 KEA Publishing</p>
+                </section>
                 <img src="img/book_php_preview.png" alt="Advanced PHP">
             </section>
             <section id="bio">
@@ -86,11 +88,11 @@
                     </article>
                 </div>
             </aside>
-        </article>
-        <article id="tour">
-            <section class="article-header">
+        </section>
+        <section id="tour">
+            <header class="article-header">
                 <h2>On tour</h2>
-            </section>
+            </header>
             <section id="conferences" class="card-container">
                 <img src="img/tristan_640.jpg" alt="Tristan Wede Lind delivers a talk">
                 <article>
@@ -189,11 +191,11 @@
             <section class="top">
                 <a href="#" target="_self" title="Go to top"><img src="img/up-arrow.png" alt="Go to top"></a>
             </section>
-        </article>
-        <article id="books">
-            <section class="article-header">
+        </section>
+        <section id="books">
+            <header class="article-header">
                 <h2>Books</h2>
-            </section>
+            </header>
             <section id="publications" class="card-container">
                 <article>
                     <img src="img/book_php.png" alt="Advanced PHP">
@@ -241,11 +243,11 @@
             <section class="top">
                 <a href="#" target="_self" title="Go to top"><img src="img/up-arrow.png" alt="Go to top"></a>
             </section>
-        </article>
-        <article id="contact">
-            <section class="article-header">
+        </section>
+        <section id="contact">
+            <header class="article-header">
                 <h2>Contact</h2>
-            </section>
+            </header>
             <section id="contact-info" class="card-container">
                 <article>                    
                     <div>
@@ -253,8 +255,12 @@
                         <h3>Publishing</h3>
                         <p class="name">Victoria Marsh</p>
                         <p class="job">Editor</p>
-                        <p class="email"><a href="mailto:victoriamarsh@keapublishing.com" title="Email Victoria Marsh">victoriamarsh@keapublishing.com</a></p>
-                        <p class="phone"><a href="tel:004407975020028" title="Phone Victoria Marsh">(+44) 079 7502 0028</a></p>
+                        <p class="email">
+                            <a href="mailto:victoriamarsh@keapublishing.com" title="Email Victoria Marsh">victoriamarsh@keapublishing.com</a>
+                        </p>
+                        <p class="phone">
+                            <a href="tel:004407975020028" title="Phone Victoria Marsh">(+44) 079 7502 0028</a>
+                        </p>
                     </div>
                 </article>
                 <article>
@@ -263,26 +269,30 @@
                         <h3>Booking</h3>
                         <p class="name">Elly Houthuijzen</p>
                         <p class="job">Agent</p>
-                        <p class="email"><a href="mailto:elly@houthuijzen.com" title="Email Elly Houthuijzen">elly@houthuijzen.com</a></p>
-                        <p class="phone"><a href="tel:00310642821232" title="Phone Elly Houthuijzen">(+31) 06-42821232</a></p>
+                        <p class="email">
+                            <a href="mailto:elly@houthuijzen.com" title="Email Elly Houthuijzen">elly@houthuijzen.com</a>
+                        </p>
+                        <p class="phone">
+                            <a href="tel:00310642821232" title="Phone Elly Houthuijzen">(+31) 06-42821232</a>
+                        </p>
                     </div>
                     <form action="mailto:elly@houthuijzen.com" method="POST">
                         <fieldset>
                             <legend>Request booking</legend>
                             <div>
                                 <label for="txtName">Name</label>
-                                <input type="text" id="txtName" name="name">
+                                <input type="text" id="txtName" name="name" required>
                             </div>
                             <div>
                                 <label for="txtEmail">E-mail address</label>
-                                <input type="email" id="txtEmail" name="email">
+                                <input type="email" id="txtEmail" name="email" required>
                             </div>
                             <div>
                                 <label for="txtEnquiry">Enquiry</label>
-                                <textarea name="enquiry" id="txtEnquiry"></textarea>
+                                <textarea name="enquiry" id="txtEnquiry" required></textarea>
                             </div>
                             <div>
-                                <input type="submit" value="Submit request">
+                                <button type="submit">Submit request</button>
                             </div>
                         </fieldset>
                     </form>
@@ -292,34 +302,34 @@
             <section class="top">
                 <a href="#" target="_self" title="Go to top"><img src="img/up-arrow.png" alt="Go to top"></a>
             </section>
-        </article>
+        </section>
     </main>
     <footer>
-        <div id="keapublishing">
+        <section id="keapublishing">
             <a href="#">
                 <img src="img/keapublishing.png" alt="KEA Publishing">
                 <span>KEA Publishing, Inc.</span>
             </a>
-        </div>            
-        <div id="some">
+        </section>            
+        <section id="some">
             <a href="#"><img class="some" src="img/twitter.png" alt="Tristan Wede Lind at Twitter"></a>
             <a href="#"><img class="some" src="img/linkedin.png" alt="Tristan Wede Lind at LinkedIn"></a>
             <a href="#"><img class="some" src="img/facebook.png" alt="Tristan Wede Lind at Facebook"></a>
-        </div>
-        <div id="legal">
+        </section>
+        <section id="legal">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
             <a href="#">Cookie Policy</a>
-        </div>
-        <div id="credits">
+        </section>
+        <section id="credits">
             <p>Person pictures by <a href="https://www.pexels.com/@bertellifotografia/" target="_blank" title="Matheus Bertelli">Matheus Bertelli</a></p>
             <p>Book cover pictures by <a href="https://www.123rf.com/" target="_blank" title="123RF">123RF</a></p>
             <p>SoMe icons generated with <a href="https://www.powr.io/plugins/social-media-icons/standalone" target="_blank" title="Pwer.io">Powr.io</a></p>
             <p>Microphone icon by <a href="https://www.freepik.com/" target="_blank" title="Freepik">Freepik</a></p>
             <p>Up arrow icon by <a href="https://www.flaticon.com/authors/yogi-aprelliyanto" target="_blank" title="Yogi Aprelliyanto">Yogi Aprelliyanto</a></p>
             <p>Texts generated by <a href="https://chat.openai.com/?model=text-davinci-002-render-sha" target="_blank" title="ChatGPT">ChatGPT</a></p>
-        </div>
-        <p>&copy; 2023-2024 KEA Development</p>
+        </section>
+        <p>&copy; 2023-2025 KEA Development</p>
     </footer>
 </body>
 </html>
