@@ -4,22 +4,22 @@
 
 /* Image */
 
-#conferences > img {
-    display: block;
-    width: 100%;   
-    margin-bottom: 1rem; 
-}
-@media (min-width: 640px) {
-    #conferences > img {
-        max-height: 360px;
-        object-fit: cover;
-    }
-}
-@media (min-width: 800px) {
-    #conferences > img {
-        content: url(../img/tristan_1280.jpg);
-        max-height: 400px;
-        object-fit: cover;
+#conferences {
+    picture {
+        width: 100%;
+        > img {
+            display: block;
+            width: 100%;   
+            margin-bottom: 1rem; 
+            @media (min-width: 640px) {
+                max-height: 360px;
+                object-fit: cover;
+            }
+            @media (min-width: 800px) {
+                max-height: 400px;
+                object-fit: cover;
+            }
+        }
     }
 }
 
@@ -27,36 +27,36 @@
 
 #conferences > article {
     padding-bottom: 1rem;
-}
-#conferences > article:last-of-type {
-    padding-bottom: 0;
-}
-#conferences > article > p {
-    margin: 0;
-}
-.date:before {
-    content: url(../img/microphone.png) " ";
-}
-.event {
-    font-weight: bold;
-    color: var(--colorBgMain);
-}
-.capacity {
-    font-weight: bold;
-    color: var(--colorCTA);
-}
-.location, .venue {
-    display: inline-block;
-}
-.venue:before {
-    content: '(';
-}
-.venue:after {
-    content: ')';
-}
-
-@media (min-width: 1024px) {
-    #conferences > article, #conferences > article:last-of-type {
+    &:last-of-type {
+        padding-bottom: 0;
+        @media (min-width: 1024px) {
+            padding: 0.5rem;
+        }
+    }
+    > p {
+        margin: 0;
+    }
+    .date:before {
+        content: url(../img/microphone.png) " ";
+    }
+    .event {
+        font-weight: bold;
+        color: var(--colorBgMain);
+    }
+    .capacity {
+        font-weight: bold;
+        color: var(--colorCTA);
+    }
+    .location, .venue {
+        display: inline-block;
+    }
+    .venue:before {
+        content: '(';
+    }
+    .venue:after {
+        content: ')';
+    }
+    @media (min-width: 1024px) {
         padding: 0.5rem;
     }
 }

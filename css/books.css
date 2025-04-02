@@ -4,43 +4,67 @@
 
 /* Book cards */
 
-#publications > article > img {
-    display: block;
-    margin: 0 auto 1rem auto;
-}
-.title, .subtitle {
-    font-weight: bold;
-}
-.title {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-}
-.subtitle, .year {
-    display: inline-block;
-}
-.year:before {
-    content: '(';
-}
-.year:after {
-    content: ')';
-}
+#publications > article {
+    > img {
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+    > header {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        color: var(--colorMain);
+        background-color: var(--colorLink);
+        > * {
+            margin: 0 0 1rem 0;
+        }
+        > h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        > h4 {
+            display: inline-block;
+            font-weight: bold;
+            .year {
+                font-weight: normal;
+                &:before {
+                    content: '(';
+                }
+                &:after {
+                    content: ')';
+                }
+            }
+        }
+    }
 
-@media (min-width: 480px) {
-    #publications > article > img {
-        float:right;
-        margin-left: 1rem;
+    @media (min-width: 480px) {
+        display: grid;
+        grid-template-areas: 
+            "header img"
+            "summary img";
+        grid-template-rows: auto 1fr;
+        column-gap: 1rem;
+        > header {
+            grid-area: header;
+        }
+        > .summary {
+            grid-area: summary;
+        }
+        > img {
+            grid-area: img;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+            @media (min-width: 1024px) {
+                margin-bottom: 1rem;
+            }
+        }
     }
-    #publications > article {
-        clear: both;
-        overflow: auto;
-    }
-    #publications > article:last-of-type {
-        margin-bottom: 0;
-    }
-}
-@media (min-width: 1024px) {
-    #publications > article, #publications > article:last-of-type {
+    @media (min-width: 1024px) {
         padding: 1rem 1rem 0 1rem;
         margin-bottom: 1rem;
     }
-}
+} 

@@ -94,7 +94,10 @@
                 <h2>On tour</h2>
             </header>
             <section id="conferences" class="card-container">
-                <img src="img/tristan_640.jpg" alt="Tristan Wede Lind delivers a talk">
+                <picture>
+                    <source media="(min-width:800px)" srcset="img/tristan_1280.jpg">
+                    <img src="img/tristan_640.jpg" alt="Tristan Wede Lind delivers a talk">
+                </picture>
                 <article>
                     <p class="date">2023, December 6-8</p>
                     <p class="event">WebTech Summit</p>
@@ -199,44 +202,50 @@
             <section id="publications" class="card-container">
                 <article>
                     <img src="img/book_php.png" alt="Advanced PHP">
-                    <p class="title">Advanced PHP</p>
-                    <p class="subtitle">From Zero to Hero</p>
-                    <p class="year">2023</p>
+                    <header>
+                        <h3>Advanced PHP</h3>
+                        <h4>From Zero to Hero <span class="year">2023</span></h4>
+                    </header>
                     <p class="summary">&quot;Advanced PHP: From Zero to Hero&quot; is a groundbreaking book that unlocks the full potential of PHP programming. With meticulous detail, Lind guides readers through advanced concepts, empowering them to master complex topics such as object-oriented programming, database integration, and secure web application development. This comprehensive guide is a must-have for aspiring PHP developers seeking to elevate their skills to heroic heights.</p>
                 </article>
                 <article>
                     <img src="img/book_css.png" alt="CSS for Developers">
-                    <p class="title">CSS for Developers</p>
-                    <p class="subtitle">A Visual Journey</p>
-                    <p class="year">2022</p>
+                    <header>
+                        <h3>CSS for Developers</h3>
+                        <h4>A Visual Journey <span class="year">2022</span></h4>
+                    </header>
                     <p class="summary">This work offers an immersive exploration of CSS that transcends mere syntax. Through vivid illustrations and practical examples, Lind demystifies the intricacies of CSS, equipping developers with the tools to craft stunning, responsive designs. This visual masterpiece is an indispensable companion for developers seeking to elevate their CSS skills and create visually captivating websites.</p>
                 </article>
                 <article>
                     <img src="img/book_js.png" alt="Advanced JavaScript">
-                    <p class="title">Advanced JavaScript</p>
-                    <p class="subtitle">Frameworkless</p>
-                    <p class="year">2021</p>
+                    <header>
+                        <h3>Advanced JavaScript</h3>
+                        <h4>Frameworkless <span class="year">2021</span></h4>
+                        </header>
                     <p class="summary">In &quot;Advanced JavaScript: Frameworkless,&quot; Tristan Wede Lind revolutionizes the approach to JavaScript development. Breaking free from the confines of frameworks, Lind delves into the core principles and advanced techniques that empower developers to create robust, scalable, and framework-independent JavaScript applications. This essential guide unveils the true potential of JavaScript, transforming developers into true masters of the language.</p>
                 </article>
                 <article>
                     <img src="img/book_programming.png" alt="Basic Programming">
-                    <p class="title">Basic Programming</p>
-                    <p class="subtitle">Algorithms and Beyond</p>
-                    <p class="year">2017</p>
+                    <header>
+                        <h3>Basic Programming</h3>
+                        <h4>Algorithms and Beyond <span class="year">2017</span></h4>
+                    </header>
                     <p class="summary">A definitive guide that demystifies the fundamentals of programming. With clarity and precision, Lind introduces readers to essential concepts such as variables, loops, and conditionals, while also delving into the world of algorithms. This comprehensive resource equips aspiring programmers with the foundational knowledge needed to embark on a successful coding journey.</p>
                 </article>
                 <article>
                     <img src="img/book_js_basic.png" alt="Basic JavaScript">
-                    <p class="title">Basic JavaScript</p>
-                    <p class="subtitle">Tweaking the Web</p>
-                    <p class="year">2017</p>
+                    <header>
+                        <h3>Basic JavaScript</h3>
+                        <h4>Tweaking the Web <span class="year">2017</span></h4>
+                    </header>
                     <p class="summary">&quot;Basic JavaScript&quot; is a transformative book that demystifies the building blocks of JavaScript. With practical examples and step-by-step instructions, Lind empowers readers to enhance websites with interactive elements and dynamic functionalities. This essential guide unlocks the power of JavaScript, enabling readers to tweak the web and create engaging user experiences.</p>
                 </article>
                 <article>
                     <img src="img/book_front_end.png" alt="Front-End Web Development">
-                    <p class="title">Front-End Web Development</p>
-                    <p class="subtitle">A Nice Introduction</p>
-                    <p class="year">2016</p>
+                    <header>
+                        <h3>Front-End Web Development</h3>
+                        <h4>A Nice Introduction <span class="year">2016</span></h4>
+                    </header>
                     <p class="summary">Tristan Wede Lind crafts a captivating journey into the world of front-end development. Lind artfully introduces readers to HTML, CSS, and JavaScript, unraveling the secrets of creating visually stunning and interactive websites. With its approachable style and comprehensive coverage, this book is the perfect starting point for aspiring front-end developers.</p>
                 </article>
             </section>
@@ -252,29 +261,37 @@
                 <article>                    
                     <div>
                         <img class="avatar" src="img/victoria.png" alt="Victoria Marsh">
-                        <h3>Publishing</h3>
-                        <p class="name">Victoria Marsh</p>
-                        <p class="job">Editor</p>
-                        <p class="email">
-                            <a href="mailto:victoriamarsh@keapublishing.com" title="Email Victoria Marsh">victoriamarsh@keapublishing.com</a>
-                        </p>
-                        <p class="phone">
-                            <a href="tel:004407975020028" title="Phone Victoria Marsh">(+44) 079 7502 0028</a>
-                        </p>
+                        <header>
+                            <h3>Publishing</h3>
+                        </header>
+                        <div class="info">
+                            <p class="name">Victoria Marsh</p>
+                            <p class="job">Editor</p>
+                            <p class="email">
+                                <a href="mailto:victoriamarsh@keapublishing.com" title="Email Victoria Marsh">victoriamarsh@keapublishing.com</a>
+                            </p>
+                            <p class="phone">
+                                <a href="tel:004407975020028" title="Phone Victoria Marsh">(+44) 079 7502 0028</a>
+                            </p>
+                        </div>
                     </div>
                 </article>
                 <article>
                     <div>
                         <img class="avatar" src="img/elly.png" alt="Elly Houthuijzen">
-                        <h3>Booking</h3>
-                        <p class="name">Elly Houthuijzen</p>
-                        <p class="job">Agent</p>
-                        <p class="email">
-                            <a href="mailto:elly@houthuijzen.com" title="Email Elly Houthuijzen">elly@houthuijzen.com</a>
-                        </p>
-                        <p class="phone">
-                            <a href="tel:00310642821232" title="Phone Elly Houthuijzen">(+31) 06-42821232</a>
-                        </p>
+                        <header>
+                            <h3>Booking</h3>
+                        </header>
+                        <div class="info">
+                            <p class="name">Elly Houthuijzen</p>
+                            <p class="job">Agent</p>
+                            <p class="email">
+                                <a href="mailto:elly@houthuijzen.com" title="Email Elly Houthuijzen">elly@houthuijzen.com</a>
+                            </p>
+                            <p class="phone">
+                                <a href="tel:00310642821232" title="Phone Elly Houthuijzen">(+31) 06-42821232</a>
+                            </p>
+                        </div>
                     </div>
                     <form action="mailto:elly@houthuijzen.com" method="POST">
                         <fieldset>

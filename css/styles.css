@@ -15,9 +15,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-}
-@media (min-width: 1024px) {
-    body {
+    @media (min-width: 1024px) {
         justify-content: flex-start;
         margin-left: calc((100vw - 745px) / 2 - 15%);
         margin-right: calc((100vw - 745px) / 2 - 15%);
@@ -50,13 +48,14 @@ nav a:hover::after, footer a:hover::after {
 main {
     padding: 1rem;
     background-color: var(--colorLink);
-}
-main > section:target {
-    display: block;
-}
-
-main > section p {
-    margin-bottom: 1rem;
+    section {
+        &:target {
+            display: block;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 a {
@@ -79,9 +78,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-}
-header > * {
-    margin: 0.5rem;
+    > * {
+        margin: 0.5rem;
+    }
 }
 #avatar {
     display: none;
@@ -89,30 +88,32 @@ header > * {
 .avatar {
     border-radius: 50%;
 }
-header h2 {
-    font-size: 1rem;
-}
-header select {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    border-radius: 0.5rem;
+header {
+    h2 {
+        font-size: 1rem;
+    }
+    select {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        border-radius: 0.5rem;
+    }
 }
 @media (min-width: 640px) {
     header {
         text-align: center;
-    }
-    #avatar {
-        display: inline-block;
-    }
-    header img {
-        max-width: 114px;
-        max-height: 114px;
-        width: 10vw;
-    }    
-    header h1 {
-        font-size: clamp(2rem, 5vw, 3.5rem);
-    }
-    header h2 {
-        font-size: clamp(1rem, 2vw, 1.6rem);
+        img {
+            max-width: 114px;
+            max-height: 114px;
+            width: 10vw;
+        }    
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+        h2 {
+            font-size: clamp(1rem, 2vw, 1.6rem);
+        }
+        #avatar {
+            display: inline-block;
+        }
     }
 }
 
@@ -124,18 +125,20 @@ nav li {
     text-align: center;
     padding: 0.5rem;
     border-bottom: solid thin var(--colorSecondary);    
-}
-nav li:last-of-type {
-    border-bottom: none;
+    &:last-of-type {
+        border-bottom: none;
+    }
 }
 @media (min-width: 600px) {
-    nav ul {
-        display: flex;
-        flex-flow: row nowrap;     
-        justify-content: space-evenly;   
-    }
-    nav li {
-        border-bottom: none;
+    nav {
+        ul {
+            display: flex;
+            flex-flow: row nowrap;     
+            justify-content: space-evenly;   
+        }
+        li {
+            border-bottom: none;
+        }
     }
 }
 
@@ -147,11 +150,11 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
     font-size: clamp(0.8rem, 2vw, 1rem);
-}
-footer > * {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    text-align: center;    
+    > * {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        text-align: center;    
+    }
 }
 @media (min-width: 600px) {
     footer {
@@ -162,9 +165,9 @@ footer > * {
             "some legal credits"
             "copyright copyright copyright";
         column-gap: 0;
-    }
-    footer > * {
-        width: 100%;
+        > * {
+            width: 100%;
+        }
     }
     #keapublishing {
         grid-area: pub;
@@ -205,19 +208,20 @@ footer > * {
     margin-bottom: 1rem;
     color: var(--colorSecondary);
     background-color: var(--colorBgSecondary);    
-}
-.article-header > h2 {
-    font-family: var(--fontHeader);
-
+    > h2 {
+        font-family: var(--fontHeader);
+    
+    }
 }
 
 /* Cards */
 .card-container > article {
     border-bottom: solid thin var(--colorSecondary);
     margin-bottom: 1rem;
-}
-.card-container > article:last-of-type {
-    border: none;
+    
+    &:last-of-type {
+        border: none;
+    }
 }
 @media (min-width: 1024px) {
     .card-container {
