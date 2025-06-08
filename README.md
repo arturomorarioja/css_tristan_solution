@@ -1,4 +1,4 @@
-# KEA Tristan Wede Lind
+# Tristan Wede Lind
 
 ## Purpose
 SPA (single page application) for the fictive web developer, author and public speaker Tristan Wede Lind.
